@@ -1,23 +1,35 @@
 h1 {
-  text-align: left;
   padding: 0.5em;
   font-size: medium;
   text-align: center;
+  color: #818181;
 }
 body {
   font-family: "Lato", "Verdana", sans-serif;
+  text-align: center;
+  color: #16647e8e;
 }
+/*This is the carousel box*/
+.container {
+  left: 400px;
+  position: absolute;
+  width: 800px;
+  height: 1000px;
+  border-radius: 0.5em;
+}
+/*This is the Side Nav Bar*/
 .sidenav {
   height: 100%;
   width: 200px;
+  border-radius: 0.5em;
   float: left;
+  position: relative;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:lightgray;
+  background-color:#d3d3d3;
   overflow-x: hidden;
 }
-
 .sidenav a {
   padding: 6px 6px 6px 32px;
   text-decoration: none;
@@ -25,11 +37,9 @@ body {
   color: #818181;
   display: block;
 }
-
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 form {
   font-family: "Lato", "Verdana", sans-serif;
   text-align: center;
@@ -61,7 +71,7 @@ textarea[name=comment], select {
 }
 input[type=submit] {
   width: 10%;
-  background-color: #90d1e78e;
+  background-color: #16647e8e;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -69,11 +79,9 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: #d9d7df;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
