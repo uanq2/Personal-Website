@@ -1,44 +1,46 @@
 h1 {
-  padding: 0.5em;
-  font-size: medium;
+  font-size: large;
+  font-weight: bold;
   text-align: center;
   color: #818181;
+}
+#caption {
+  font-size: small;
+  color: #16647e8e;
 }
 body {
   font-family: "Lato", "Verdana", sans-serif;
   text-align: center;
+  font-size: medium;
   color: #16647e8e;
+}
+/*This is the Side Nav Bar*/
+.sidenav {
+  height: 110%;
+  width: 200px;
+  border-radius: 0.5em;
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color:#d3d3d3;
+}
+.sidenav a {
+  padding: 6px 6px 6px 10px;
+  text-decoration: gray;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover, .sidenav a:active {
+  color: #f1f1f1;
 }
 /*This is the carousel box*/
 .container {
   left: 400px;
   position: absolute;
-  width: 800px;
-  height: 1000px;
-  border-radius: 0.5em;
-}
-/*This is the Side Nav Bar*/
-.sidenav {
-  height: 100%;
-  width: 200px;
-  border-radius: 0.5em;
-  float: left;
-  position: relative;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:#d3d3d3;
-  overflow-x: hidden;
-}
-.sidenav a {
-  padding: 6px 6px 6px 32px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
+  width: 650px;
+  height: 850px;
 }
 form {
   font-family: "Lato", "Verdana", sans-serif;
@@ -63,11 +65,9 @@ input[type=email], select {
 }
 textarea[name=comment], select {
   width: 20%;
-  padding: 20px 2px;
-  margin: 8px 0;
+  padding: 50px 2px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: content-box;
 }
 input[type=submit] {
   width: 10%;
@@ -81,8 +81,4 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: #d9d7df;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
